@@ -1,0 +1,80 @@
+@import '../styles/colors.scss';
+
+.featuresContainer {
+
+  .topFeatures {
+    padding-left: 0px;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 30px;
+  }
+
+  li {
+    margin: 5px 0;
+  }
+
+  .listIcons {
+    top: 5px;
+    position: relative;
+    margin-right: 7px;
+  }
+
+  .expandList, .collapseList {
+    top: 7px;
+    position: relative;
+    margin-left: 0px;
+  }
+
+  .expandList {
+    display: inline-block;
+  }
+
+  .collapseList {
+    display: none;
+  }
+
+  .expandableBtn {
+    color: $quaternary;
+    background: none;
+    padding: 0;
+    border: none;
+    font-size: 16px;
+
+    &:focus {
+      border: none;
+      outline: none;
+    }
+  }
+
+  .subfeaturesList {
+    display: none;
+  }
+
+  .expanded {
+    & > .subfeaturesList {
+      display: block;
+    }
+
+    & > button > .expandList {
+      display: none;
+    }
+
+    & > button > .collapseList {
+      display: inline-block;
+    }
+  }
+
+  @media only screen and (min-width: 981px) {
+    .topFeatures {
+      display: flex;
+      flex-wrap: wrap;
+
+      & > li {
+        flex: 0 1 auto;
+        width: 245px;
+      }
+    }
+  }
+}

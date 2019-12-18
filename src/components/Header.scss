@@ -1,0 +1,50 @@
+.header {
+  display: flex;
+  padding: 0 5px;
+
+  .logoContainer {
+    flex: 1 0 auto;
+    text-align: left;
+    padding: 13px 0 0 0;
+  }
+
+  .logo {
+    height: 20px;
+  }
+
+  .signinContainer {
+    flex: 1 0 auto;
+    text-align: right;
+    padding: 5px 0;
+  }
+
+  @media only screen and (min-width: 400px) {
+    .logo {
+      height: 30px;
+    }
+  }
+
+  @media only screen and (min-width: 500px) {
+    .logoContainer {
+      padding: 10px 0 10px 0px;
+    }
+
+    .logo {
+      height: 40px;
+    }
+
+    .signinContainer {
+      padding: 12px 0px 12px 0;
+    }
+  }
+
+  @media only screen and (min-width: 991px) {
+    .logoContainer {
+      padding: 10px 0 10px 10px;
+    }
+
+    .signinContainer {
+      padding: 12px 10px 12px 0;
+    }
+  }
+}

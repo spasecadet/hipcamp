@@ -1,0 +1,13 @@
+@import '../../styles/colors.scss';
+
+.primaryOutline {
+  background-color: none;
+  border: 4px solid $secondary;
+  color: $secondary;
+  padding: 5px;
+  font-size: 18px;
+
+  &:hover {
+    color: $quaternary;
+  }
+}

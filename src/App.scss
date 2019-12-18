@@ -1,0 +1,19 @@
+.app {
+  text-align: center;
+
+  .contentContainer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .content {
+    text-align: left;
+    padding: 0 5px;
+    max-width: 980px;
+  }
+
+  .campsiteImage {
+    width: 100%;
+    max-width: 980px;
+  }
+}
